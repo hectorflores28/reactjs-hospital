@@ -1,21 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Appointments from './pages/Appointments';
-import Doctors from './pages/Doctors';
-import Login from './pages/Login';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import TarjetasExtras from './components/TarjetasExtras';
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/citas" element={<Appointments />} />
-        <Route path="/medicos" element={<Doctors />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-      <Footer />
-    </Router>
-  );
+    return (
+        <div className="container">
+            <Navbar />
+            <Hero />
+            <TarjetasExtras />
+            <Footer />
+        </div>
+    );
 }
+
+// Renderizar la aplicación
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,37 +1,21 @@
-import { Link, NavLink } from 'react-router-dom';
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const CustomNavbar = ({ isAdmin }) => {
-  return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand as={Link} to="/">Oxygen</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
-            <Nav.Link as={NavLink} to="/citas">Citas</Nav.Link>
-            <Nav.Link as={NavLink} to="/medicos">Médicos</Nav.Link>
-            {isAdmin ? (
-              <AdminNavItems />
-            ) : (
-              <Nav.Link as={NavLink} to="/login">Ingresar Sesión</Nav.Link>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+const Navbar = () => {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container">
+                <Link to="/" className="navbar-brand">Hospital</Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#navbarNav">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto">
+                        {/* Menú del navbar */}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
 };
-
-const AdminNavItems = () => (
-  <NavDropdown title="Historial Médico" id="basic-nav-dropdown">
-    <NavDropdown.Item as={Link} to="/vacunas">Vacunas</NavDropdown.Item>
-    <NavDropdown.Item as={Link} to="/analisis">Análisis</NavDropdown.Item>
-    <NavDropdown.Item as={Link} to="/radiografias">Radiografías</NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item as={Link} to="/logout">Salir</NavDropdown.Item>
-  </NavDropdown>
-);
-
-export default CustomNavbar;
