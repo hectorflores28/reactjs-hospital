@@ -1,0 +1,122 @@
+/* Estilos base */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar personalizado */
+  .navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--secondary-color) !important;
+  }
+  
+  /* Sección Hero */
+  .hero-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+  }
+  
+  .hero-img {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Formulario CURP */
+  .curp-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+  }
+  
+  /* Tarjetas */
+  .card-hospital {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--bg-light);
+  }
+  
+  .card-hospital:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+  
+  .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  .footer-hospital {
+    margin-top: auto;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  /* Utilidades */
+  .btn-hospital-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-hospital-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      text-align: center;
+    }
+    
+    .hero-img {
+      margin-bottom: 2rem;
+    }
+    
+    .navbar-collapse {
+      padding-top: 1rem;
+    }
+  }

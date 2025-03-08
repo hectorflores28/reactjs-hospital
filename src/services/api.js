@@ -1,13 +1,19 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://tu-api.com',
+  baseURL: process.env.REACT_APP_API_URL || 'http://tu-backend.com/api',
   headers: {
-    'Content-Type': 'application/json'
-  }
+    'Content-Type': 'application/json',
+  },
 });
 
-export const getEnfermedades = async (searchTerm) => {
-  const response = await api.get(`/enfermedades?search=${searchTerm}`);
-  return response.data;
-};
+// Interceptores para manejar tokens
+api.interceptors.request.use(config => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  if (user?.token) {
+    config.headers.Authorization = `Bearer ${user.token}`;
+  }
+  return config;
+});
+
+export default api;
