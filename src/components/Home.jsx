@@ -16,7 +16,10 @@ const Home = () => {
         <Col lg={5}>
           <h1 className="font-weight-light">¿Conoces tu CURP?</h1>
           <p>La consulta puede efectuarse proporcionando tu nombre y datos de nacimiento.</p>
-          <Button onClick={() => setShowCurpForm(!showCurpForm)}>
+          <Button 
+            variant="primary" 
+            onClick={() => setShowCurpForm(!showCurpForm)}
+          >
             Solicitar formulario para CURP
           </Button>
           {showCurpForm && <CurpForm />}
@@ -27,3 +30,5 @@ const Home = () => {
     </Container>
   );
 };
+
+export default Home;

@@ -1,16 +1,13 @@
 import React from 'react';
 
-const Card = ({ titulo, contenido }) => {
+const Footer = () => {
   return (
-    <div className="col-md-4 mb-4">
-      <div className="card h-100 shadow">
-        <div className="card-body">
-          <h5 className="card-title">{titulo}</h5>
-          <p className="card-text">{contenido}</p>
-        </div>
+    <footer className="py-5 bg-dark">
+      <div className="container px-4 px-lg-5">
+        <p className="m-0 text-center text-white">Copyright &copy; Oxygen 2024</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
-export default Card;
+export default Footer;

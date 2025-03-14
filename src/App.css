@@ -15,6 +15,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  .container {
+    border: 2px solid red !important; /* Debug visual */
+  }
   
   /* Navbar personalizado */
   .navbar {

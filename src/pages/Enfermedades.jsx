@@ -25,7 +25,6 @@ export default function Enfermedades() {
   const columns = [
     { header: '#', accessor: 'id' },
     { header: 'Nombre', accessor: 'nombre' },
-    // ... demás columnas
   ];
 
   return (
