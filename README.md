@@ -1,5 +1,5 @@
 # ReactJS Hospital
 
-Hospital Ficticio Oxygen
+Hospital Ficticio MediFinance
 
 ![Foto](public/screenshot.png)
