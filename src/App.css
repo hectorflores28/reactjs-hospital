@@ -1,10 +1,10 @@
 /* Estilos base */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
+    --primary-color: #2d8660;  /* Verde oscuro */
+    --secondary-color: #4caf50; /* Verde medio */
+    --accent-color: #8bc34a;  /* Verde claro */
     --text-color: #333;
-    --bg-light: #f8f9fa;
+    --bg-light: #f1f8e9;  /* Fondo verde muy claro */
   }
   
   body {
@@ -14,29 +14,35 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fcfff5;
   }
 
   .container {
-    border: 2px solid red !important; /* Debug visual */
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   /* Navbar personalizado */
   .navbar {
     background-color: var(--primary-color) !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
   .navbar-brand {
     font-weight: 600;
     letter-spacing: 0.5px;
+    color: white !important;
   }
   
   .nav-link {
     transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
   }
   
   .nav-link:hover {
-    color: var(--secondary-color) !important;
+    color: white !important;
+    transform: translateY(-2px);
   }
   
   /* Sección Hero */
@@ -60,7 +66,8 @@
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--secondary-color);
   }
   
   .form-label {
@@ -68,9 +75,15 @@
     color: var(--primary-color);
   }
   
+  .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
   .form-control:focus {
     border-color: var(--secondary-color);
-    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
   }
   
   /* Tarjetas */
@@ -78,16 +91,35 @@
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: var(--bg-light);
+    border-radius: 10px;
   }
   
-  .card-hospital:hover {
+  .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+    height: 100%;
+  }
+  
+  .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
   }
   
   .card-title {
     color: var(--primary-color);
     font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    color: #616161;
   }
   
   /* Footer */
@@ -96,6 +128,7 @@
     background-color: var(--primary-color);
     color: white;
     padding: 2rem 0;
+    text-align: center;
   }
   
   /* Utilidades */
@@ -104,16 +137,34 @@
     border: none;
     padding: 0.75rem 2rem;
     transition: all 0.3s ease;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
   .btn-hospital-primary:hover {
-    background-color: #2980b9;
+    background-color: #43a047;
     transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  
+  .row {
+    margin-bottom: 3rem;
+  }
+  
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
   }
   
   @media (max-width: 768px) {
     .hero-section {
       text-align: center;
+      padding: 2rem 0;
     }
     
     .hero-img {
@@ -122,5 +173,9 @@
     
     .navbar-collapse {
       padding-top: 1rem;
+    }
+    
+    .btn-hospital-primary {
+      width: 100%;
     }
   }
