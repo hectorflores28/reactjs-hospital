@@ -2,4 +2,4 @@
 
 Hospital Ficticio Oxygen
 
-![Foto](public/screenshot.png)o
+![Foto](public/screenshot.png)
