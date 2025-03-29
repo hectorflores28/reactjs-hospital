@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="row gx-4 gx-lg-5 align-items-center my-5">
       <div className="col-lg-7">
-        <img className="img-fluid rounded mb-4 mb-lg-0" src="https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hospital Finance" />
+        <img className="img-fluid rounded mb-4 mb-lg-0" src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hospital Finance" />
       </div>
       <div className="col-lg-5">
         <h1 className="font-weight-light">Apoyo Financiero Hospitalario</h1>
