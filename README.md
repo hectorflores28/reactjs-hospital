@@ -1,5 +1,14 @@
 # MediFinance - Sistema de Financiamiento Hospitalario 🏥
 
+## Imagenes
+![Inicio](public/screenshot.png)
+![](public/screenshot1.png)
+![Planes-De-Pago](public/screenshot2.png)
+![Consultas-Medicas](public/screenshot3.png)
+![Centro-De-Asistencia](public/screenshot4.png)
+![Login](public/screenshot5.png)
+
+
 ## Descripción
 MediFinance es una aplicación web moderna desarrollada con React que facilita la gestión de financiamiento para servicios médicos y hospitalarios. Proporciona una interfaz intuitiva para que los usuarios puedan explorar planes de pago, solicitar consultas y acceder a asistencia financiera.
 
