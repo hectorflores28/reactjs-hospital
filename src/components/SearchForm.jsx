@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const SearchForm = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -9,20 +11,21 @@ const SearchForm = ({ onSearch }) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="mb-4">
-      <InputGroup>
-        <Form.Control
+    <form onSubmit={handleSubmit} className="mb-4">
+      <div className="input-group">
+        <input
           type="search"
+          className="form-control"
           placeholder="Buscar pacientes..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Buscar"
         />
-        <Button variant="outline-primary" type="submit">
+        <button className="btn btn-outline-primary" type="submit">
           Buscar
-        </Button>
-      </InputGroup>
-    </Form>
+        </button>
+      </div>
+    </form>
   );
 };
 

@@ -1,6 +1,6 @@
 /* Estilos base */
 :root {
-    --primary-color: #2d8660;  /* Verde oscuro */
+    --primary-color: #2d8660;  /* Verde oscuro del logo */
     --secondary-color: #4caf50; /* Verde medio */
     --accent-color: #8bc34a;  /* Verde claro */
     --text-color: #333;
@@ -115,11 +115,12 @@
   .card-title {
     color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
   
   .card-text {
     color: #616161;
+    margin-bottom: 1.5rem;
   }
   
   /* Footer */
@@ -133,23 +134,43 @@
   
   /* Utilidades */
   .btn-hospital-primary {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
     border: none;
     padding: 0.75rem 2rem;
-    transition: all 0.3s ease;
-    color: white;
     font-weight: 500;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
   }
   
-  .btn-hospital-primary:hover {
-    background-color: #43a047;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  /* Estilo específico para los botones de "Más Información" */
+  .btn-info-card {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
+    transform: none !important;
+    box-shadow: none !important;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .btn-info-card:hover {
+    background-color: #3a9d74 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Asegurarnos de que ningún botón en las cards se levante */
+  .card .btn-hospital-primary {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .card .btn-hospital-primary:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
   
   .row {
@@ -178,4 +199,186 @@
     .btn-hospital-primary {
       width: 100%;
     }
+  }
+
+  /* Estilos para las cards de planes */
+  .card {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Estilos para los formularios */
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(45, 134, 96, 0.25);
+  }
+
+  /* Estilos para los acordeones */
+  .accordion-button:not(.collapsed) {
+    background-color: var(--bg-light) !important;
+    color: var(--primary-color) !important;
+  }
+
+  .accordion-button:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(45, 134, 96, 0.25) !important;
+  }
+
+  /* Estilos para los iconos */
+  .bi {
+    color: var(--primary-color);
+  }
+
+  /* Añade estos estilos al final del archivo */
+  .card {
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+  }
+
+  .card-header {
+    border-radius: 8px 8px 0 0 !important;
+  }
+
+  .btn-hospital-primary:hover {
+    background-color: #246d4e; /* Un tono más oscuro del verde principal */
+    transform: translateY(-2px);
+  }
+
+  /* Añade estos estilos si no los tienes ya */
+  .gap-3 {
+    gap: 1rem !important;
+  }
+
+  .card {
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  /* Asegúrate de que los botones no se estiren */
+  .btn-hospital-primary {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* Añade o modifica estos estilos */
+  .img-fluid {
+    transition: all 0.3s ease;
+  }
+
+  .card {
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  /* Asegurarse de que los botones no se estiren */
+  .btn-hospital-primary {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  /* Ajustes para el contenedor de la imagen */
+  .img-container {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  main {
+    min-height: calc(100vh - 160px); /* Ajusta este valor según la altura de tu navbar y footer */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding-top: 1rem;
+    }
+    
+    .container {
+      padding-top: 1rem;
+    }
+  }
+
+  /* Estilos para el Accordion */
+  .accordion-button:not(.collapsed) {
+    background-color: var(--bg-light) !important;
+    color: var(--primary-color) !important;
+  }
+
+  .accordion-button:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(45, 134, 96, 0.25) !important;
+  }
+
+  /* Asegurarse de que los iconos en las cards tengan transición suave */
+  .card-body .bi,
+  .card-body svg {
+    transition: color 0.3s ease;
+  }
+
+  /* Estilos para el formulario de login */
+  .form-control {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(45, 134, 96, 0.25);
+  }
+
+  .form-label {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  /* Estilos para el botón de login */
+  .btn-hospital-primary.login-btn {
+    padding: 0.75rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* Estilos para la card de login */
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card-header {
+    border-bottom: none;
+  }
+
+  .alert {
+    border-radius: 8px;
+    border: none;
+  }
+
+  .alert-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
   }
