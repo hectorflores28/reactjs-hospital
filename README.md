@@ -1,11 +1,16 @@
 # MediFinance - Sistema de Financiamiento Hospitalario 🏥
 
 ## Imagenes
+### Inicio
 ![Inicio](public/screenshot.png)
 ![](public/screenshot1.png)
+### Planes de Pago
 ![Planes-De-Pago](public/screenshot2.png)
+### Consultas Medicas
 ![Consultas-Medicas](public/screenshot3.png)
+### Centro de Asistencia
 ![Centro-De-Asistencia](public/screenshot4.png)
+### Inicio de Sesion
 ![Login](public/screenshot5.png)
 
 
