@@ -1,4 +1,4 @@
-# MediFinance - Sistema de Financiamiento Hospitalario 🏥
+# Sistema de Financiamiento Hospitalario
 
 ![React](https://img.shields.io/badge/React-19.0.0-61DAFB.svg)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.5-7952B3.svg)
