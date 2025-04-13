@@ -27,8 +27,8 @@ const TarjetasExtras = () => {
   ];
 
   return (
-    <div className="row mt-5">
-      <h2 className="text-center mb-4">Servicios Financieros</h2>
+    <div className="row mt-5 animate-fade-in">
+      <h2 className="text-center mb-4 animate-slide-up">Servicios Financieros</h2>
       <div className="row">
         {cards.map((card, index) => (
           <Card 
@@ -37,6 +37,8 @@ const TarjetasExtras = () => {
             contenido={card.contenido}
             imagen={card.imagen}
             onButtonClick={() => navigate(card.route)}
+            className="animate-slide-up"
+            style={{animationDelay: `${0.2 + (index * 0.2)}s`}}
           />
         ))}
       </div>
