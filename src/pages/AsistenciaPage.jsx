@@ -29,13 +29,13 @@ const AsistenciaPage = () => {
   };
 
   return (
-    <Container className="py-5 mt-4">
-      <h1 className="text-center mb-5">Centro de Asistencia</h1>
+    <Container className="py-5 mt-4 animate-fade-in">
+      <h1 className="text-center mb-5 animate-slide-up">Centro de Asistencia</h1>
       
       {/* Sección de Contacto Directo */}
       <Row className="mb-5">
         <Col md={4}>
-          <Card className="text-center h-100 shadow-sm">
+          <Card className="text-center h-100 shadow-sm animate-slide-up" style={{animationDelay: '0.2s'}}>
             <Card.Body>
               <Icon 
                 name="phone" 
@@ -48,7 +48,7 @@ const AsistenciaPage = () => {
           </Card>
         </Col>
         <Col md={4}>
-          <Card className="text-center h-100 shadow-sm">
+          <Card className="text-center h-100 shadow-sm animate-slide-up" style={{animationDelay: '0.3s'}}>
             <Card.Body>
               <Icon 
                 name="envelope" 
@@ -61,7 +61,7 @@ const AsistenciaPage = () => {
           </Card>
         </Col>
         <Col md={4}>
-          <Card className="text-center h-100 shadow-sm">
+          <Card className="text-center h-100 shadow-sm animate-slide-up" style={{animationDelay: '0.4s'}}>
             <Card.Body>
               <Icon 
                 name="clock" 
@@ -76,12 +76,12 @@ const AsistenciaPage = () => {
       </Row>
 
       {/* Sección de Preguntas Frecuentes */}
-      <h2 className="text-center mb-4">Preguntas Frecuentes</h2>
+      <h2 className="text-center mb-4 animate-slide-up" style={{animationDelay: '0.5s'}}>Preguntas Frecuentes</h2>
       <Row className="justify-content-center">
         <Col md={8}>
-          <Accordion>
+          <Accordion className="animate-fade-in" style={{animationDelay: '0.6s'}}>
             {faqItems.map((item, index) => (
-              <Accordion.Item key={index} eventKey={index.toString()}>
+              <Accordion.Item key={index} eventKey={index.toString()} className="animate-fade-in" style={{animationDelay: `${0.7 + (index * 0.1)}s`}}>
                 <Accordion.Header>{item.pregunta}</Accordion.Header>
                 <Accordion.Body>{item.respuesta}</Accordion.Body>
               </Accordion.Item>

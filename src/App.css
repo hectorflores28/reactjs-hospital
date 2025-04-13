@@ -5,6 +5,9 @@
     --accent-color: #8bc34a;  /* Verde claro */
     --text-color: #333;
     --bg-light: #f1f8e9;  /* Fondo verde muy claro */
+    --transition-speed: 0.3s;
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --input-border-color: #ced4da;
   }
   
   body {
@@ -76,14 +79,36 @@
   }
   
   .form-control {
-    border: 1px solid #e0e0e0;
-    padding: 12px;
+    border: 1px solid var(--input-border-color) !important;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #fff;
   }
   
   .form-control:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 134, 96, 0.25);
+    outline: none;
+  }
+  
+  .form-select {
+    border: 1px solid var(--input-border-color) !important;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .form-select:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(45, 134, 96, 0.25);
+    outline: none;
+  }
+  
+  textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
   }
   
   /* Tarjetas */

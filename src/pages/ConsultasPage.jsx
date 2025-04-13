@@ -24,11 +24,11 @@ const ConsultasPage = () => {
   };
 
   return (
-    <Container className="py-5 mt-4">
+    <Container className="py-5 mt-4 animate-fade-in">
       <Row className="justify-content-center">
         <Col md={8}>
-          <h1 className="text-center mb-4">Consultas Médicas</h1>
-          <Card className="shadow-sm">
+          <h1 className="text-center mb-4 animate-slide-up">Consultas Médicas</h1>
+          <Card className="shadow-sm animate-slide-up" style={{animationDelay: '0.2s'}}>
             <Card.Body className="p-4">
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
@@ -39,6 +39,8 @@ const ConsultasPage = () => {
                     value={formData.nombre}
                     onChange={handleChange}
                     required
+                    className="animate-fade-in"
+                    style={{animationDelay: '0.3s'}}
                   />
                 </Form.Group>
 
@@ -50,6 +52,8 @@ const ConsultasPage = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className="animate-fade-in"
+                    style={{animationDelay: '0.4s'}}
                   />
                 </Form.Group>
 
@@ -61,6 +65,8 @@ const ConsultasPage = () => {
                     value={formData.telefono}
                     onChange={handleChange}
                     required
+                    className="animate-fade-in"
+                    style={{animationDelay: '0.5s'}}
                   />
                 </Form.Group>
 
@@ -71,6 +77,8 @@ const ConsultasPage = () => {
                     value={formData.tipo_consulta}
                     onChange={handleChange}
                     required
+                    className="animate-fade-in"
+                    style={{animationDelay: '0.6s'}}
                   >
                     <option value="">Seleccione una opción</option>
                     <option value="general">Medicina General</option>
@@ -89,13 +97,16 @@ const ConsultasPage = () => {
                     value={formData.mensaje}
                     onChange={handleChange}
                     required
+                    className="animate-fade-in"
+                    style={{animationDelay: '0.7s'}}
                   />
                 </Form.Group>
 
                 <div className="text-center">
                   <Button 
                     type="submit" 
-                    className="btn-hospital-primary"
+                    className="btn-hospital-primary animate-fade-in"
+                    style={{animationDelay: '0.8s'}}
                   >
                     Enviar Consulta
                   </Button>
