@@ -1,5 +1,17 @@
 # MediFinance - Sistema de Financiamiento Hospitalario 🏥
 
+![React](https://img.shields.io/badge/React-19.0.0-61DAFB.svg)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.5-7952B3.svg)
+![React Bootstrap](https://img.shields.io/badge/React_Bootstrap-2.10.9-7952B3.svg)
+![React Router](https://img.shields.io/badge/React_Router-7.3.0-CA4245.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)
+![Axios](https://img.shields.io/badge/Axios-1.8.2-5A29E4.svg)
+![HTML](https://img.shields.io/badge/HTML-5-E34F26.svg)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6.svg)
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-6.7.2-528DD7.svg)
+![Status](https://img.shields.io/badge/Status-En_Desarrollo-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Imagenes
 ### Inicio
 ![Inicio](public/screenshot.png)
@@ -13,147 +25,57 @@
 ### Inicio de Sesion
 ![Login](public/screenshot5.png)
 
-
-## Descripción
-MediFinance es una aplicación web moderna desarrollada con React que facilita la gestión de financiamiento para servicios médicos y hospitalarios. Proporciona una interfaz intuitiva para que los usuarios puedan explorar planes de pago, solicitar consultas y acceder a asistencia financiera.
-
-## Características Principales 🌟
-
-- **Planes de Financiamiento**
-  - Múltiples opciones de planes
+- **Gestión de Planes de Pago**
+  - Visualización de planes disponibles
   - Comparación de beneficios
-  - Proceso de selección simplificado
+  - Selección de plan personalizado
 
-- **Consultas Médicas**
-  - Programación de citas
-  - Seguimiento de consultas
-  - Historial médico
+- **Sistema de Consultas**
+  - Formulario de consultas médicas
+  - Seguimiento de solicitudes
+  - Historial de consultas
 
-- **Asistencia Financiera**
-  - Centro de ayuda
-  - Preguntas frecuentes
+- **Centro de Asistencia**
+  - FAQ interactivo
   - Contacto directo
+  - Soporte en línea
 
-- **Sistema de Autenticación**
+- **Autenticación de Usuarios**
   - Login seguro
   - Gestión de sesiones
-  - Protección de rutas
+  - Rutas protegidas
 
-## Tecnologías Utilizadas 💻
+## Tecnologías
 
-- React.js
-- React Router DOM
-- React Bootstrap
-- Axios
-- Font Awesome
-- Bootstrap Icons
+- React 19.0.0
+- Node.js 14+
+- Bootstrap 5.3.5
+- React Router 7.3.0
+- Axios 1.8.2
+- Font Awesome 6.7.2
 
-## Requisitos Previos 📋
+## Instalación
 
-- Node.js (versión 14 o superior)
-- npm o yarn
-- Servidor de base de datos (configurado separadamente)
-
-## Instalación 🛠️
-
-1. Clonar el repositorio:
 ```bash
-git clone https://github.com/hectorflores28/reactjs-hospital.git
-```
-
-2. Instalar dependencias:
-```bash
-cd reactjs-hospital
 npm install
-```
-
-3. Crear archivo .env con las variables de entorno necesarias:
-```env
-REACT_APP_API_URL=http://tu-api-url.com
-```
-
-4. Iniciar el servidor de desarrollo:
-```bash
 npm start
 ```
 
-## Estructura del Proyecto 📁
+## Uso
 
-```
-reactjs-hospital/
-├── public/
-│   ├── index.html
-│   └── assets/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── context/
-│   ├── services/
-│   ├── routes/
-│   └── App.jsx
-├── package.json
-└── README.md
-```
+1. Accede a la plataforma
+2. Explora los planes disponibles
+3. Realiza consultas médicas
+4. Gestiona tu financiamiento
 
-## Componentes Principales 🔍
+## Contribución
 
-### Navbar
-- Navegación principal
-- Enlaces a secciones importantes
-- Responsive design
+Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request.
 
-### Home
-- Hero section
-- Tarjetas informativas
-- Formulario CURP
+## Licencia
 
-### Planes
-- Visualización de planes
-- Comparación de beneficios
-- Selección de plan
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-### Consultas
-- Formulario de consulta
-- Calendario de citas
-- Seguimiento
+## Sobre el Proyecto
 
-### Asistencia
-- Centro de ayuda
-- FAQ
-- Información de contacto
-
-## Estilos y Temas 🎨
-
-El proyecto utiliza una paleta de colores consistente:
-- Verde Principal: `#2d8660`
-- Verde Secundario: `#4caf50`
-- Verde Claro: `#8bc34a`
-- Fondo Claro: `#f1f8e9`
-
-## Scripts Disponibles 📜
-
-- `npm start`: Inicia el servidor de desarrollo
-- `npm build`: Construye la aplicación para producción
-- `npm test`: Ejecuta las pruebas
-- `npm eject`: Expone la configuración de webpack
-
-## Contribución 🤝
-
-1. Fork el proyecto
-2. Crea tu rama de características (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Agradecimientos 🎁
-
-- Equipo de desarrollo
-- Contribuidores
-- Usuarios beta
-
----
-⌨️ con ❤️ por [Hector](https://github.com/hectorflores28) 
+Sistema web para la gestión de financiamiento hospitalario. Interfaz moderna con tema personalizado, formularios interactivos y sistema de autenticación integrado. 
